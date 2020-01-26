@@ -28,7 +28,7 @@ You can see that the positions of the four corners of the card are predicted qui
 
 The program randomly picks a card and a background image from a set of available pictures ([/Cards](/Cards), [/Backgrounds](/Backgrounds)). It applies a number of rotations, perspectives, and position transformations to the card while keeping track of the corner and bounding box coordinates. Images are created until the disered sample size is reached. 
 
-Example of a card tranformation : 
+Example of a card transformation : 
 
 Raw Image | Transformed Image
 ------------ | -------------
@@ -36,7 +36,7 @@ Raw Image | Transformed Image
 
 ## Running it on your machine
 
-You can use your own card and background images by replacing those in [/Cards](/Cards) and [/Backgrounds](/Backgrounds) to your own. You will need to use the Dlib python templates (linked in the Results section) to train and test your models. 
+You can use your own card and background images by replacing those in [/Cards](/Cards) and [/Backgrounds](/Backgrounds) to your own. You will need to use the Dlib python templates (linked in the Results section) to train and test your models. During training, you need to copy and paste the labelled information from [/XMLs/Box_points.txt](/XMLs) to the corresponding train and test XMLs templates provided.
 
 You will also need the following libraries :
 - [dlib 19.19](https://anaconda.org/conda-forge/dlib)
