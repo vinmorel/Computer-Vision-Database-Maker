@@ -26,8 +26,12 @@ You can see that the position of the four corners of the card is predicted quite
 
 ## How it works
 
-The program randomly picks a card and a background image from a set of available raw pictures ([/Cards](/Cards),[/Backgrounds](/Backgrounds)). It applies rotation, perspective, and position transformations to the card whilst keeping track of the corner and bounding box coordinates. 
+The program randomly picks a card and a background image from a set of available raw pictures ([/Cards](/Cards), [/Backgrounds](/Backgrounds)). It applies a number of rotations, perspectives, and position transformations to the card whilst keeping track of the corner and bounding box coordinates. This process is repeated until the disered sample size is reached. 
 
-<p align="center">
-  <img src="/Showcase/Source_1.png"> <img src="/Showcase/Card_transform.png"> 
- </p>
+Example of a card tranformation : 
+
+Raw Image | Transformed Image
+------------ | -------------
+![Raw](/Showcase/Source_1.png) | ![Transformed](/Showcase/Card_transform.png)
+
+ 
