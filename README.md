@@ -49,6 +49,6 @@ You will also need the following libraries :
 Thank you to 
 [DeepLearning.ai](https://www.youtube.com/watch?v=rRB9iymNy1w),
 [Luca Anzalone](https://medium.com/datadriveninvestor/training-alternative-dlib-shape-predictor-models-using-python-d1d8f8bd9f5c),
-[Dlib](http://dlib.net/), and many more for making this project possible. 
+[Dlib](http://dlib.net/), and many more for inspiration and guidance. 
 
 
