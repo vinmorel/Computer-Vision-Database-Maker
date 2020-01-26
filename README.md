@@ -12,4 +12,15 @@ Here is a sample of the generated database :
   <img src="/Showcase/Sample.jpg">
  </p>
  
-These may not look like it, but they are generated images, not pictures taken by hand. You can have a look at [/Database](/Database) for a closer look at these, where you might detect some signs. 
+These may not look like it, but they are generated images, not pictures taken by hand. You can have a look at [/Database](/Database) for a closer look at these, where you might detect some signs that they are not real. 
+
+The associated labels are saved in [/XMLs](/XMLs) in the file "Box_points.txt".
+
+I trained an [object detection model](http://dlib.net/train_object_detector.py.html) in conjunction with a [shape detection model](http://dlib.net/train_shape_predictor.py.html) using [dlib 19.19](https://anaconda.org/conda-forge/dlib). The trained models' predictions were suprisingly good using real images : 
+
+<p align="center">
+  <img src="/Results/Pred2.png">
+ </p>
+
+You can see that the position of the four corners of the card is predicted quite accurately, and the model detects that there is a card on the image. You can have a look at [/Results](/Results) for more prediction results. 
+
