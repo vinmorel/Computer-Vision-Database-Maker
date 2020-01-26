@@ -12,9 +12,7 @@ Here is a sample of the generated database :
   <img src="/Showcase/Sample.jpg">
  </p>
  
-These may not look like it, but they are generated images, not pictures taken by hand. You can have a look at [/Database](/Database) for a closer look at these, where you might detect some signs that they are not real. 
-
-The associated labels are saved in [/XMLs](/XMLs) in the file "Box_points.txt".
+These may not look like it, but they are generated images, not pictures taken by hand. You can have a look at [/Database](/Database) for a closer look at these, where you might detect some signs that they are not real. The associated labels are saved in [/XMLs](/XMLs) in the file "Box_points.txt".
 
 I trained an [object detection model](http://dlib.net/train_object_detector.py.html) in conjunction with a [shape detection model](http://dlib.net/train_shape_predictor.py.html) using [dlib 19.19](https://anaconda.org/conda-forge/dlib). The trained models' predictions were suprisingly good using real images : 
 
@@ -22,7 +20,7 @@ I trained an [object detection model](http://dlib.net/train_object_detector.py.h
   <img src="/Results/Pred2.png">
  </p>
 
-You can see that the position of the four corners of the card is predicted quite accurately, and the model detects that there is a card on the image. You can have a look at [/Results](/Results) for more prediction results. 
+You can see that the positions of the four corners of the card are predicted quite accurately, and the model detects that there is a card on the image. You can have a look at [/Results](/Results) for more test results. 
 
 ## How it works
 
@@ -34,4 +32,21 @@ Raw Image | Transformed Image
 ------------ | -------------
 ![Raw](/Showcase/Source_1.png) | ![Transformed](/Showcase/Card_transform.png)
 
- 
+## Running it on your machine
+
+You can use your own card and background images by replacing those in [/Cards](/Cards) and [/Backgrounds](/Backgrounds) to your own. You will need to use the Dlib python templates (linked in the Results section) to train and test your models. 
+
+You will also need the following libraries :
+- [dlib 19.19](https://anaconda.org/conda-forge/dlib)
+- [Pillow 7.0.0](https://anaconda.org/conda-forge/pillow)
+- [Numpy 1.17.5](https://anaconda.org/conda-forge/numpy)
+
+
+## Acknowledgments
+
+Thank you to 
+[DeepLearning.ai](https://www.youtube.com/watch?v=rRB9iymNy1w),
+[Luca Anzalone](https://medium.com/datadriveninvestor/training-alternative-dlib-shape-predictor-models-using-python-d1d8f8bd9f5c),
+[Dlib](http://dlib.net/), and many more for making this project possible. 
+
+
