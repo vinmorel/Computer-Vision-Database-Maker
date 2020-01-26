@@ -154,7 +154,7 @@ for n in range(sample_size):
 #    back_im = back_im.convert("L")
     
     # Save image to sample folder
-    back_im.save(path+"/Sample/"+str(n)+".jpg", quality=100)
+    back_im.save(path+"/Database/"+str(n)+".jpg", quality=100)
     
     # save image labels to txt
     with open(path+'/XMLs/Box_points.txt',"a+") as result_file:
