@@ -2,7 +2,7 @@
 
 > The aim of this project was to create a labelled image dataset automatically, rather than by hand, that could be used to train a model for object detection and landmark recognition. This method is a work-around to creating a labelled image dataset by hand, which can be a very long and tedious process.
 
-> This particular program generates images of playing cards on various backgrounds, with different positions and perspectives. It keeps track of the bounding box of the card positions as well as the four corner coordinates of the cards, so that images are automatically labelled when it comes time to train the model.   
+> This particular program generates images of playing cards on various backgrounds, with different positions and perspectives. It keeps track of the bounding box as well as the four corner coordinates of the cards, so that images are automatically labelled when it comes time to train the model.   
 
 ## Results 
 
@@ -24,3 +24,10 @@ I trained an [object detection model](http://dlib.net/train_object_detector.py.h
 
 You can see that the position of the four corners of the card is predicted quite accurately, and the model detects that there is a card on the image. You can have a look at [/Results](/Results) for more prediction results. 
 
+## How it works
+
+The program randomly picks a card and a background image from a set of available raw pictures ([/Cards](/Cards),[/Backgrounds](/Backgrounds)). It applies rotation, perspective, and position transformations to the card whilst keeping track of the corner and bounding box coordinates. 
+
+<p align="center">
+  <img src="/Showcase/Source_1.png"> <img src="/Showcase/Card_transform.png"> 
+ </p>
