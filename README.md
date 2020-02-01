@@ -26,7 +26,7 @@ You can see that the positions of the four corners of the card are predicted qui
 
 ## How it works
 
-The program randomly picks a card and a background image from a set of available pictures ([/Cards](/Cards), [/Backgrounds](/Backgrounds)). It applies a number of rotations, perspectives, and position transformations to the card image while keeping track of the corner and bounding box coordinates. It then pastes the card image on one of the available backgrounds. Images are created until the disered sample size is reached. 
+The program randomly picks a card and a background image from a set of available pictures ([/Cards](/Cards), [/Backgrounds](/Backgrounds)). It applies a number of rotation, perspective, and position transformations to the card image while keeping track of the corner and bounding box coordinates. Images are created until the disered sample size is reached. 
 
 Example of a card transformation : 
 
